@@ -1,0 +1,5 @@
+name: seg
+version: 0.0.1
+author: Michel Martens <soveran@gmail.com>
+description: Segment matcher for paths
+homepage: https://github.com/soveran/seg.dart
