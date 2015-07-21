@@ -5,17 +5,15 @@ library seg;
 
 class Seg {
   String path;
-  int size;
   int pos = 1;
 
-  Seg(this.path) {
-    this.size = this.path.length;
-  }
+  Seg(this.path);
 
   String get head => path[pos];
   String get curr => path.substring(pos - 1, size);
   String get prev => path.substring(0, pos - 1);
   bool   get root => pos >= size;
+  int    get size => path.length;
 
   void _move(offset) {
     pos += offset + 1;
